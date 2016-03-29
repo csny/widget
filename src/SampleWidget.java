@@ -21,13 +21,21 @@ public class SampleWidget extends AppWidgetProvider {
 		String dayofweek = "";
 		switch (cal.get(Calendar.DAY_OF_WEEK)) {
 		case Calendar.SUNDAY: dayofweek = "(日)";
+		break;
 		case Calendar.MONDAY: dayofweek = "(月)";
+		break;
 		case Calendar.TUESDAY: dayofweek = "(火)";
+		break;
 		case Calendar.WEDNESDAY: dayofweek = "(水)";
+		break;
 		case Calendar.THURSDAY: dayofweek = "(木)";
+		break;
 		case Calendar.FRIDAY: dayofweek = "(金)";
+		break;
 		case Calendar.SATURDAY: dayofweek = "(土)";
+		break;
 		}
+		//System.out.println(cal.get(Calendar.DAY_OF_WEEK));
 		String printdate = "平成" + (year-1988) + "年/"
 		+ year + "年\n" + (month+1) + "月" + day + "日　" + dayofweek;
         //～　リモートビューにmain.xmlをセット　～//
